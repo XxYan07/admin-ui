@@ -22,10 +22,10 @@ const Single = () => {
                 className="itemImg"
               />
               <div className="details">
-                <h1 className="itemTitle">SITI AMINAH</h1>
+                <h1 className="itemTitle">Fernanda</h1>
                 <div className="detailItem">
                   <span className="itemKey">Email:</span>
-                  <span className="itemValue">aminahcantik@gmail.com</span>
+                  <span className="itemValue">fernandacakep@gmail.com</span>
                 </div>
                 <div className="detailItem">
                   <span className="itemKey">Phone:</span>

@@ -6,6 +6,7 @@ import Single from "./pages/single/Single";
 import New from "./pages/new/New";
 import { productInputs, userInputs } from "./formsource";
 import MyList from "./pages/mylist/MyList";
+import Product from "./pages/list product/List";
 
 function App() {
   return (
@@ -13,13 +14,14 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/single" element={<Single/>} />
           <Route path="/users">
             <Route index element={<List />} />
             <Route path="new" element={<New inputs={userInputs} title="Add New User" />} />
             <Route path=":userId" element={<Single />} />
           </Route>
           <Route path="/products">
-            <Route index element={<List />} />
+            <Route index element={<Product />} />
             <Route path="new" element={<New inputs={productInputs} title="Add New Product" />} />
             <Route path=":productId" element={<Single />} />
           </Route>

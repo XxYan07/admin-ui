@@ -20,10 +20,12 @@ const Sidebar = () => {
       <div className="center">
         <ul>
           <p className="title">MAIN</p>
+          <Link to="/">
           <li>
             <DashboardIcon className="icon"/>
             <span>Dashboard</span>
           </li>
+          </Link>
           <p className="title">LIST</p>
           <Link to="/users">
             <li>
@@ -48,14 +50,18 @@ const Sidebar = () => {
             <span>Orders</span>
           </li>
           <p className="title">USER</p>
+          <Link to="/single">
           <li>
             <AccountCircleIcon className="icon"/>
             <span>Profile</span>
           </li>
+          </Link>
+          <Link to="/login">
           <li>
             <LogoutIcon className="icon"/>
             <span>Logout</span>
           </li>
+          </Link>
         </ul>
       </div>
       <div className="bottom">
