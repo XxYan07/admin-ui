@@ -5,7 +5,7 @@ import List from "./pages/list/List";
 import Single from "./pages/single/Single";
 import New from "./pages/new/New";
 import { productInputs, userInputs } from "./formsource";
-
+import MyList from "./pages/mylist/MyList";
 
 function App() {
   return (
@@ -23,6 +23,7 @@ function App() {
             <Route path="new" element={<New inputs={productInputs} title="Add New Product" />} />
             <Route path=":productId" element={<Single />} />
           </Route>
+          <Route path="/categories" element={<MyList />} />
         </Routes>
       </BrowserRouter>
   
